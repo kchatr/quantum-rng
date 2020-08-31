@@ -16,7 +16,7 @@ namespace QuantumRNG {
         }
     }
 
-    operation sampleRandNumInRange(max : Int) : Int {
+    operation sampleRandNumInRange(min : Int, max : Int) : Int {
         mutable output = 0;
 
         // Apply the generateRandBit() function until the integer output is less than the max specified in the parameters 
@@ -31,16 +31,16 @@ namespace QuantumRNG {
 
             // Set output to the integer conversion of the bit-string array.
             set output = ResultArrayAsInt(bits);
-        } until(output <= max);
+        } until(output <= max and output >= min);
 
         return output;
     }
 
     @EntryPoint()
-    operation randNum(max_num : Int) : Int {
+    operation randNum(min_num : Int, max_num : Int) : Int {
         let max = max_num;
-        Message($"Generating a random number between 0 and {max}:");
-        return sampleRandNumInRange(max);
+        let min = min_num;
+        Message($"\nGenerating a random number between {min} and {max}:");
+        return sampleRandNumInRange(min, max);
     }
-
 }
