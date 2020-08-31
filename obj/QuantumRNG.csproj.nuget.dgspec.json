@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\Quantum Programming\\QuantumRNG\\QuantumRNG.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\Quantum Programming\\QuantumRNG\\QuantumRNG.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Quantum Programming\\QuantumRNG\\QuantumRNG.csproj",
+        "projectName": "QuantumRNG",
+        "projectPath": "C:\\Projects\\Quantum Programming\\QuantumRNG\\QuantumRNG.csproj",
+        "packagesPath": "C:\\Users\\cha_k\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Quantum Programming\\QuantumRNG\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\cha_k\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Quantum.CsharpGeneration": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.12.20082513, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Quantum.EntryPointDriver": {
+              "target": "Package",
+              "version": "[0.12.20082513, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Quantum.QSharp.Core": {
+              "target": "Package",
+              "version": "[0.12.20082513, )"
+            },
+            "Microsoft.Quantum.Runtime.Core": {
+              "target": "Package",
+              "version": "[0.12.20082513, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Quantum.Simulators": {
+              "target": "Package",
+              "version": "[0.12.20082513, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Quantum.Standard": {
+              "target": "Package",
+              "version": "[0.12.20082513, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
