@@ -8,7 +8,7 @@ print("This quantum random generator relies on using the Hadamard quantum gate f
 min = int(input("Enter the smallest possible number the random number generated should be: "))
 max = int(input("Enter the largest possible number the random number generated should be: "))
 
-assert max > min
+assert max > min, "The minimum value must be smaller than the maximum."
 
 rand_num = randNum.simulate(min_num = min, max_num = max)
 
