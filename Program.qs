@@ -37,8 +37,8 @@ namespace QuantumRNG {
     }
 
     @EntryPoint()
-    operation randNum() : Int {
-        let max = 50;
+    operation randNum(max_num : Int) : Int {
+        let max = max_num;
         Message($"Generating a random number between 0 and {max}:");
         return sampleRandNumInRange(max);
     }
