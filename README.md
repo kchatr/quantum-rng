@@ -1,4 +1,4 @@
-#Quantum Random Number Generator
+# Quantum Random Number Generator
 
 This is a quantum random generator which produces truly random numbers when run on quantum hardware.
 
